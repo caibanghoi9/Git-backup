@@ -1,34 +1,88 @@
 ﻿<!DOCTYPE html>
 <html>
 <head>
-    <title>Bank System</title>
+    <title>Bank System - Trang chủ</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta charset="utf-8" />
 
-    <link href="bootstrap-3.3.7-dist/css/bootstrap.css" rel="stylesheet" />
-    <script src="bootstrap-3.3.7-dist/js/bootstrap.js"></script>
+    <!--Ajax-->
+    <script src="assets/jquery-2.1.4.min.js"></script>
+    <script src="js/JavaScript.js"></script>
 
-    <link href="style/style2.css" rel="stylesheet" />
+    <!--Bootstrap-->
+    <script src="bootstrap-3.3.7-dist/js/bootstrap.js"></script>
+    <link href="bootstrap-3.3.7-dist/css/bootstrap.css" rel="stylesheet" />
+    <link href="style/style.css" rel="stylesheet" />
+    <!-- Website Font style -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
+
+    <!-- Google Fonts -->
+    <link href='https://fonts.googleapis.com/css?family=Passion+One' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Oxygen' rel='stylesheet' type='text/css'>
+
+    <!--cookie master-->
+    <script src="js-cookie-master/src/js.cookie.js"></script>    
+    
+    <script type="text/javascript">
+        $(window).load(function () {
+            var a = localStorage.getItem("isDangNhap");
+            if (a == "true") {
+
+                //CODE
+            }            
+        });
+    </script>
 </head>
 <body>
-
-    <a href="#" data-toggle="modal" data-target="#login-modal">Login</a>
-    <div class="modal fade" id="login-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" style="display: none;">
-        <div class="modal-dialog">
-            <div class="loginmodal-container">
-                <h1>Login to Your Account</h1><br>
-                <form>
-                    <input type="text" name="user" placeholder="Username">
-                    <input type="password" name="pass" placeholder="Password">
-                    <input type="submit" id="submit" name="login" class="login loginmodal-submit" value="Login">
-                </form>
-
-                <div class="login-help">
-                    <a href="#">Register</a> - <a href="#">Forgot Password</a>
+    <div class="container-fluid">
+        
+        <div class="row" id="header">
+            <div class="container">
+                <div class="left">
+                    <ul>
+                        <li><a href="#">Trang chủ</a></li>
+                        <li><a href="#">Khách hàng</a></li>
+                        <li><a href="#">Giao dịch</a></li>
+                    </ul>
                 </div>
+                <div class="right">
+                    <ul>
+                        <li>
+                            <a href="#">Đăng nhập</a>
+                        </li>
+                    </ul>
+                </div>
+            </div> 
+        </div>
+        <div class="row">
+            <div class="col-md-12" id="content">
+
             </div>
         </div>
+        <div class="row" id="footer">
+            <div class="container">
+                <div class="left">
+                    <ul>
+                        <li><a href="#">Quy định</a></li>
+                        <li><a href="#">Điều khoản</a></li>
+                        <li><a href="#">Thông báo</a></li>
+                        <li><a href="#">Hướng dẫn sử dụng</a></li>
+                    </ul>
+                </div>
+                <div class="right">
+                    <ul>
+                        <li>
+                            <a href="#">Design by aZ</a>
+                        </li>
+                        <li>
+                            <a href="#">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>        
+                
+        </div>            
     </div>
-
-</body>
+    
+</body><!--End body-->
 </html>

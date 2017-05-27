@@ -7,27 +7,6 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebApi", "WebApi\WebApi.csp
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleApplication1", "ConsoleApplication1\ConsoleApplication1.csproj", "{804176D7-D10D-459B-9F85-930F6F3C9D50}"
 EndProject
-Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "BankWebsite", "..\BankWebsite\", "{3B910301-D32D-4F45-B9D3-1E36D6E19EFA}"
-	ProjectSection(WebsiteProperties) = preProject
-		TargetFrameworkMoniker = ".NETFramework,Version%3Dv4.5.2"
-		Debug.AspNetCompiler.VirtualPath = "/localhost_57601"
-		Debug.AspNetCompiler.PhysicalPath = "..\BankWebsite\"
-		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_57601\"
-		Debug.AspNetCompiler.Updateable = "true"
-		Debug.AspNetCompiler.ForceOverwrite = "true"
-		Debug.AspNetCompiler.FixedNames = "false"
-		Debug.AspNetCompiler.Debug = "True"
-		Release.AspNetCompiler.VirtualPath = "/localhost_57601"
-		Release.AspNetCompiler.PhysicalPath = "..\BankWebsite\"
-		Release.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_57601\"
-		Release.AspNetCompiler.Updateable = "true"
-		Release.AspNetCompiler.ForceOverwrite = "true"
-		Release.AspNetCompiler.FixedNames = "false"
-		Release.AspNetCompiler.Debug = "False"
-		VWDPort = "57601"
-		SlnRelativePath = "..\BankWebsite\"
-	EndProjectSection
-EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -42,10 +21,6 @@ Global
 		{804176D7-D10D-459B-9F85-930F6F3C9D50}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{804176D7-D10D-459B-9F85-930F6F3C9D50}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{804176D7-D10D-459B-9F85-930F6F3C9D50}.Release|Any CPU.Build.0 = Release|Any CPU
-		{3B910301-D32D-4F45-B9D3-1E36D6E19EFA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{3B910301-D32D-4F45-B9D3-1E36D6E19EFA}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{3B910301-D32D-4F45-B9D3-1E36D6E19EFA}.Release|Any CPU.ActiveCfg = Debug|Any CPU
-		{3B910301-D32D-4F45-B9D3-1E36D6E19EFA}.Release|Any CPU.Build.0 = Debug|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

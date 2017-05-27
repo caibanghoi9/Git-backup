@@ -18,14 +18,8 @@ namespace WebApi.Controllers
         {
             
             using (NganHangEntities ctx = new NganHangEntities())
-            {
-                var list = ctx.NhanViens
-                    .Select(c => new
-                    {
-                        c.MaNhanVien
-                        
-                    }).ToList();
-                return Ok(list);
+            {                
+                return Ok();
             }                
         }
         public static String TimNhanVien_TK_MK(String username,String password)
@@ -61,10 +55,10 @@ namespace WebApi.Controllers
                     })
                     .Where(c => c.TaiKhoan == nv.TaiKhoan && c.MatKhau == nv.MatKhau)
                     .ToList();
-                return Request.CreateResponse(HttpStatusCode.Created,nv_output);
+                return Request.CreateResponse(HttpStatusCode.OK,nv_output);
             }
             else
-                return Request.CreateResponse(HttpStatusCode.NotFound);
+                return Request.CreateResponse(HttpStatusCode.Created);
         }
     }
 }

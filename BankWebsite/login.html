@@ -2,6 +2,7 @@
 <html>
 <head>
     <title>Bank System - Đăng Nhập</title>   
+    <meta charset="utf-8" />
 
     <!--Ajax-->
     <script src="assets/jquery-2.1.4.min.js"></script>
@@ -10,26 +11,24 @@
     <!--Bootstrap-->
     <script src="bootstrap-3.3.7-dist/js/bootstrap.js"></script>
     <link href="bootstrap-3.3.7-dist/css/bootstrap.css" rel="stylesheet" />
-    <link href="style.css" rel="stylesheet" />
+    <link href="style/logincss.css" rel="stylesheet" />
+
     <!-- Website Font style -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
 
     <!-- Google Fonts -->
     <link href='https://fonts.googleapis.com/css?family=Passion+One' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Oxygen' rel='stylesheet' type='text/css'>   
-	    
-
-    <meta charset="utf-8" />
-</head>
+	 
+    <!--cookie master-->   
+    <script src="js-cookie-master/src/js.cookie.js"></script>    
+    
+</head><!--End head-->
 <body>
     <div class="container-fluid">
         <div class="col-md-12" id="header_login">
             <a href="#"><img src="image/KeyBank-Logo.jpg"alt="logo" width="10%" height="10%" /></a>
-        </div><!--End div #header_login-->
-
-        <!--<div class="col-md-6">
-
-        </div>-->
+        </div><!--End div #header_login-->        
 
         <div class="" id="content_login">
             <div class="row main">
@@ -41,7 +40,7 @@
                 </div> 
                 <div class="main-login main-center">
 
-                    <form class="form-horizontal">
+                    <form class="form-horizontal" onsubmit="return validationform()">
                         <div class="form-group">                                          
                             <label for="username" class="cols-sm-2 control-label">Username</label>
                             <div class="cols-sm-10">
@@ -51,6 +50,7 @@
                                 </div>
                             </div> 
                         </div>
+
                         <div class="form-group">
                             <label for="password" class="cols-sm-2 control-label">Password</label>
                             <div class="cols-sm-10">
@@ -62,32 +62,24 @@
                         </div>
                     
                         <div class="form-group ">
-                            <button type="submit" id="a" onclick="validation();" class="btn btn-primary btn-lg btn-block login-button">Register</button>
+                            <button type="submit" onclick="validation()" class="btn btn-primary btn-lg btn-block login-button">Register</button>
                         </div>
                         
-                    </form>
+                    </form><!--End login form-->
 
                 </div><!--End div .main-login .main-center-->
-            </div>
-        </div><!--End div #content_login-->
+            </div><!--End div .row .main-->
+        </div><!--End div #content_login-->        
 
-        <!--End div #content_login-->
-        <!--<div class="col-md-4">
-
-        </div>-->
-        <div class="col-md-12" id="footer_login">         
-                
-                        <ul id="nav">
-                            <li><a href="#">Quy định</a></li>
-                            <li><a href="#">Điều khoản</a></li>
-                            <li><a href="#">Thông báo</a></li>
-                            <li><a href="#">Hướng dẫn sử dụng</a></li>
-                        </ul>                   
-                
-           
+        
+        <div class="col-md-12" id="footer_login">               
+            <ul id="nav">
+                <li><a href="#">Quy định</a></li>
+                <li><a href="#">Điều khoản</a></li>
+                <li><a href="#">Thông báo</a></li>
+                <li><a href="#">Hướng dẫn sử dụng</a></li>
+            </ul>          
         </div><!--End footer_login-->
-    </div>
-    
- </body>
-
+    </div><!--End div container-fluid-->    
+ </body><!--End body-->
 </html>
