@@ -4,13 +4,13 @@
   <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
     <!-- Diagram content (shape and connector positions) -->
     <edmx:Diagrams>
-      <Diagram DiagramId="7a065b8bf1a84a7096cd17478a691e21" Name="Diagram1">
+      <Diagram DiagramId="d9e576a6264a433c9e44610d05c39a2d" Name="Diagram1">
         <EntityTypeShape EntityType="NganHangModel.ChiNhanhNganHang" Width="1.5" PointX="3" PointY="13.75" IsExpanded="true" />
         <EntityTypeShape EntityType="NganHangModel.CreditCard" Width="1.5" PointX="7.5" PointY="12.25" IsExpanded="true" />
         <EntityTypeShape EntityType="NganHangModel.CreditCard_history" Width="1.5" PointX="9.75" PointY="12.5" IsExpanded="true" />
         <EntityTypeShape EntityType="NganHangModel.DebitCard" Width="1.5" PointX="7.5" PointY="15.625" IsExpanded="true" />
         <EntityTypeShape EntityType="NganHangModel.DebitCard_history" Width="1.5" PointX="9.75" PointY="15.625" IsExpanded="true" />
-        <EntityTypeShape EntityType="NganHangModel.KhachHang" Width="1.5" PointX="5.25" PointY="12.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="NganHangModel.KhachHang" Width="1.5" PointX="5.25" PointY="12.5" IsExpanded="true" />
         <EntityTypeShape EntityType="NganHangModel.LichSuGiaoDich" Width="1.5" PointX="14.75" PointY="11.125" IsExpanded="true" />
         <EntityTypeShape EntityType="NganHangModel.LoaiGiaoDich" Width="1.5" PointX="12.5" PointY="5.375" IsExpanded="true" />
         <EntityTypeShape EntityType="NganHangModel.LoaiNhanVien" Width="1.5" PointX="3" PointY="8.125" IsExpanded="true" />

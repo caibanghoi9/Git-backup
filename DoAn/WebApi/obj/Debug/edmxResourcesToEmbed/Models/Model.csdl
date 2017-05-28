@@ -70,10 +70,11 @@
     <Property Name="DiaChi" Type="String" MaxLength="20" FixedLength="true" Unicode="true" />
     <Property Name="NgaySinh" Type="DateTime" Precision="0" />
     <Property Name="CMND" Type="Int32" />
+    <Property Name="GioiTinh" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
     <Property Name="SoDu" Type="Int32" />
     <Property Name="ChiNhanhMoTaiKhoan" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
     <Property Name="TaiKhoanDangNhap" Type="String" MaxLength="16" FixedLength="true" Unicode="true" />
-    <Property Name="MatKhau" Type="String" MaxLength="20" FixedLength="true" Unicode="true" />
+    <Property Name="MatKhau" Type="String" MaxLength="16" FixedLength="true" Unicode="true" />
     <Property Name="Status" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
     <NavigationProperty Name="ChiNhanhNganHang" Relationship="Self.FK_KhachHang_ChiNhanhNganHang" FromRole="KhachHang" ToRole="ChiNhanhNganHang" />
     <NavigationProperty Name="CreditCards" Relationship="Self.FK_CreditCard_KhachHang" FromRole="KhachHang" ToRole="CreditCard" />
@@ -132,13 +133,13 @@
     </Key>
     <Property Name="MaNhanVien" Type="String" MaxLength="10" FixedLength="true" Unicode="true" Nullable="false" />
     <Property Name="HoTen" Type="String" MaxLength="20" FixedLength="true" Unicode="true" />
-    <Property Name="DiaChi" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+    <Property Name="DiaChi" Type="String" MaxLength="25" FixedLength="true" Unicode="true" />
     <Property Name="CMND" Type="Int32" />
     <Property Name="GioiTinh" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
     <Property Name="SDT" Type="Int32" />
     <Property Name="ThuocChiNhanh" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
-    <Property Name="TaiKhoan" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
-    <Property Name="MatKhau" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+    <Property Name="TaiKhoan" Type="String" MaxLength="16" FixedLength="true" Unicode="true" />
+    <Property Name="MatKhau" Type="String" MaxLength="16" FixedLength="true" Unicode="true" />
     <Property Name="LoaiNhanVien" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
     <Property Name="Status" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
     <NavigationProperty Name="ChiNhanhNganHang" Relationship="Self.FK_NhanVien_ChiNhanhNganHang" FromRole="NhanVien" ToRole="ChiNhanhNganHang" />

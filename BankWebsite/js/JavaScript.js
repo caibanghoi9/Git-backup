@@ -1,4 +1,8 @@
-﻿
+﻿$('ul.nav li.dropdown').hover(function () {
+    $(this).find('.dropdown-menu').stop(true, true).delay(200).fadeIn(500);
+}, function () {
+    $(this).find('.dropdown-menu').stop(true, true).delay(200).fadeOut(500);
+});
 
 function validationform() {
     return false;
@@ -8,9 +12,9 @@ function validation() {
     var passWord = document.getElementsByName("password")[0].value;
     if (userName != '' && passWord != '') {
         LoadKhachHang(userName, passWord);
-    }   
+    }
     else
-        alert("Cần điền tài khoản và mật khâu!");
+        swal("Nhập đầy đủ Tên đăng nhập và Mật khẩu!");
 }
 
 function LoadKhachHang(userName, passWord) {
@@ -35,7 +39,9 @@ function LoadKhachHang(userName, passWord) {
         {
             localStorage.setItem("isDangNhap", true);
             Cookies.set('username', data[0].HoTen);
+            
             window.location.href = "index.html";
+                      
         }  
     })
     .fail(function (jqXHR, textStatus, error) {
@@ -43,13 +49,14 @@ function LoadKhachHang(userName, passWord) {
         console.log(jqXHR.statusCode);
         if (jqXHR.status == 201)
         {
-            alert("Sai tên đăng nhập hoặc mật khẩu!");
+            sweetAlert("Oops...", "Sai Tên đăng nhập hoặc Mật khẩu!", "error");
         }
         else
-            alert("Kết nói đến api bị lỗi!");
+            sweetAlert("Oops...", "Lỗi không kết nối được đến máy chủ Api!", "error");
     });
 }
 
 /*$.each(data, function (index, dm) {
 
 });*/
+

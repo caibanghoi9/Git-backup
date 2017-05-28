@@ -61,10 +61,11 @@
     <Property Name="DiaChi" Type="nchar" MaxLength="20" />
     <Property Name="NgaySinh" Type="date" />
     <Property Name="CMND" Type="int" />
+    <Property Name="GioiTinh" Type="nchar" MaxLength="10" />
     <Property Name="SoDu" Type="int" />
     <Property Name="ChiNhanhMoTaiKhoan" Type="nchar" MaxLength="10" />
     <Property Name="TaiKhoanDangNhap" Type="nchar" MaxLength="16" />
-    <Property Name="MatKhau" Type="nchar" MaxLength="20" />
+    <Property Name="MatKhau" Type="nchar" MaxLength="16" />
     <Property Name="Status" Type="nchar" MaxLength="10" />
   </EntityType>
   <EntityType Name="LichSuGiaoDich">
@@ -107,13 +108,13 @@
     </Key>
     <Property Name="MaNhanVien" Type="nchar" MaxLength="10" Nullable="false" />
     <Property Name="HoTen" Type="nchar" MaxLength="20" />
-    <Property Name="DiaChi" Type="nchar" MaxLength="10" />
+    <Property Name="DiaChi" Type="nchar" MaxLength="25" />
     <Property Name="CMND" Type="int" />
     <Property Name="GioiTinh" Type="nchar" MaxLength="10" />
     <Property Name="SDT" Type="int" />
     <Property Name="ThuocChiNhanh" Type="nchar" MaxLength="10" />
-    <Property Name="TaiKhoan" Type="nchar" MaxLength="10" />
-    <Property Name="MatKhau" Type="nchar" MaxLength="10" />
+    <Property Name="TaiKhoan" Type="nchar" MaxLength="16" />
+    <Property Name="MatKhau" Type="nchar" MaxLength="16" />
     <Property Name="LoaiNhanVien" Type="nchar" MaxLength="10" />
     <Property Name="Status" Type="nchar" MaxLength="10" />
   </EntityType>

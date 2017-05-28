@@ -33,6 +33,7 @@ namespace WebApi.Models
         public string DiaChi { get; set; }
         public Nullable<System.DateTime> NgaySinh { get; set; }
         public Nullable<int> CMND { get; set; }
+        public string GioiTinh { get; set; }
         public Nullable<int> SoDu { get; set; }
         public string ChiNhanhMoTaiKhoan { get; set; }
         public string TaiKhoanDangNhap { get; set; }

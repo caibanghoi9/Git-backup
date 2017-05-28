@@ -66,6 +66,7 @@
           <ScalarProperty Name="DiaChi" ColumnName="DiaChi" />
           <ScalarProperty Name="NgaySinh" ColumnName="NgaySinh" />
           <ScalarProperty Name="CMND" ColumnName="CMND" />
+          <ScalarProperty Name="GioiTinh" ColumnName="GioiTinh" />
           <ScalarProperty Name="SoDu" ColumnName="SoDu" />
           <ScalarProperty Name="ChiNhanhMoTaiKhoan" ColumnName="ChiNhanhMoTaiKhoan" />
           <ScalarProperty Name="TaiKhoanDangNhap" ColumnName="TaiKhoanDangNhap" />
