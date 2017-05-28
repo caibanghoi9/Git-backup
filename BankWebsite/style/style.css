@@ -4,26 +4,40 @@ body{
     font-family: 'Oxygen', sans-serif;
     line-height: 0;
 }
+label{
+    margin-bottom: 15px;
+    margin-top: 15px;
+}
+h1, .h1, h2, .h2, h3, .h3 {
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
 ul{
     list-style-type: none;
     margin: 0;
     padding: 0;
 }
+.container{
+    height: 80px;
+}
 #header{
     height: 75px;
     background: #FFFFFF;
+}
+#header li{
+    float: left;
 }
 #header li a{
     display: block;
     color: #231F20;
     text-align: center;
-    padding: 25px 16px;
+    padding: 26px 16px;
     text-decoration: none;
     font-size: 1.14286em;
     font-weight: 700;
 }
-#header li{
-    float: left;
+#header li a:last-child{
+    border-right: none;    
 }
 #header li a:hover{
     color: #FFFFFF;
@@ -55,7 +69,7 @@ ul{
 }
 
 #content{
-    background: #4A4B50;
+    background: #EFEFEF;
     height: 1000px;
 }
 #footer{

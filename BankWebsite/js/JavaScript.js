@@ -1,9 +1,4 @@
-﻿$('ul.nav li.dropdown').hover(function () {
-    $(this).find('.dropdown-menu').stop(true, true).delay(200).fadeIn(500);
-}, function () {
-    $(this).find('.dropdown-menu').stop(true, true).delay(200).fadeOut(500);
-});
-
+﻿
 function validationform() {
     return false;
 }
@@ -38,10 +33,8 @@ function LoadKhachHang(userName, passWord) {
         if (xhr.status == 200)
         {
             localStorage.setItem("isDangNhap", true);
-            Cookies.set('username', data[0].HoTen);
-            
-            window.location.href = "index.html";
-                      
+            Cookies.set('username', data[0].HoTen);            
+            window.location.href = "index.html";                      
         }  
     })
     .fail(function (jqXHR, textStatus, error) {

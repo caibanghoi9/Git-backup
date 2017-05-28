@@ -7,7 +7,6 @@
 
     <!--Ajax-->
     <script src="assets/jquery-2.1.4.min.js"></script>
-    <script src="js/JavaScript.js"></script>
 
     <!--Bootstrap-->
     <script src="bootstrap-3.3.7-dist/js/bootstrap.js"></script>
@@ -22,8 +21,26 @@
     <link href='https://fonts.googleapis.com/css?family=Oxygen' rel='stylesheet' type='text/css'>
 
     <!--cookie master-->
+    <script src="sweetalert-master/dist/sweetalert.min.js"></script>
+    <link href="sweetalert-master/dist/sweetalert.css" rel="stylesheet" />
     <script src="js-cookie-master/src/js.cookie.js"></script>    
-    
+
+    <!--LapSoTietKiem-->
+    <script src="js/LapSoTietKiem.js"></script>
+    <link href="style/LapSoTietKiem.css" rel="stylesheet" />
+
+
+    <script type="text/javascript">
+                    $(window).load(function () {
+                        var a = localStorage.getItem("isDangNhap");
+                        if (a == "true") {
+                            swal("Đăng nhập thành công.", "Tiếp tục.", "success")
+                            //CODE
+                        }
+                        else
+                            alert("fail");
+                    });
+    </script>
     
 </head>
 <body>
@@ -34,7 +51,19 @@
                 <ul class="nav navbar-nav">
                     <li><a href="#">Trang chủ</a></li>
                     <li><a href="#">Khách hàng</a></li>
-                    <li><a href="#">Giao dịch</a></li>
+                    <li class="dropdown">
+                        <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                            Chuyển khoản
+                            <span class="caret"></span>
+                        </a>
+                        <ul class="dropdown-menu" role="menu">
+                            <li><a href="#">Nội bộ</a></li>
+                            <li><a href="#">Liên ngân hàng</a></li>
+                            <li><a href="#">Mở thẻ tiết kiệm</a></li>
+                            <li><a href="#">Chứng khoán</a></li>
+                            <li><a href="#">Lịch sử giao dịch</a></li>
+                        </ul>
+                    </li>
                     <li><a href="#">Tra cứu</a></li>
                 </ul>
             <ul class="nav navbar-nav navbar-right">
@@ -56,10 +85,8 @@
         </div><!--End div row content-->       
             
         
-        <div class="row"><!--row content-->
-            <div class="col-md-12" id="content">
-
-            </div>
+        <div class="row" id="content" ><!--row content-->
+            <object type="text/html" data="/module/test.html"></object>
         </div><!--End div row content-->
 
         <div class="row" id="footer"><!--row footer-->
@@ -84,14 +111,6 @@
             </div><!--End container footer-->               
         </div>  <!--End row footer-->          
     </div><!--End contain bao ngoai-->
-    <script type="text/javascript">
-                    $(window).load(function () {
-                        var a = localStorage.getItem("isDangNhap");
-                        if (a == "true") {
-                            document.getElementsById('lblUser').innerHTML = "a";
-                            //CODE
-                        }
-                    });
-    </script>
+    
 </body><!--End body-->
 </html>
