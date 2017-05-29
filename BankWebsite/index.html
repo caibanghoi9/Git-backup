@@ -32,20 +32,20 @@
 
     <script type="text/javascript">
                     $(window).load(function () {
-                        var a = localStorage.getItem("isDangNhap");
-                        if (a == "true") {
+                        var a = Cookies.get("username");
+                        if (a != "" && a != undefined) {
                             swal("Đăng nhập thành công.", "Tiếp tục.", "success")
                             //CODE
                         }
                         else
-                            alert("fail");
+                            //window.location.href="login.html"
                     });
     </script>
     
 </head>
 <body>
     <div class="container-fluid"><!--Wrapper-->
-
+    <!------------------------------------------------------------header------------------------------------------------------------------->
         <div class="row" id="header">
             <div class="container">
                 <ul class="nav navbar-nav">
@@ -81,14 +81,20 @@
                     </ul>
                 </li>
             </ul>
-            </div>   <!--End div container header-->
-        </div><!--End div row content-->       
-            
+            </div>   <!--End div container header-->        
+        </div><!--End div row header-->       
+    <!-----------------------------------------------------------------------End header--------------------------------------------------------------------->      
         
+    <!-------------------------------------------------------------------------content---------------------------------------------------------------------->
         <div class="row" id="content" ><!--row content-->
-            <object type="text/html" data="/module/test.html"></object>
-        </div><!--End div row content-->
 
+
+            
+
+            
+        </div><!--End div row content-->
+    <!-----------------------------------------------------------------End content-------------------------------------------------------------------------------------->
+    <!--------------------------------------------------------------------footer---------------------------------------------------------------------------------------->
         <div class="row" id="footer"><!--row footer-->
             <div class="container">               
                 
@@ -109,7 +115,8 @@
                     </ul>         
                     
             </div><!--End container footer-->               
-        </div>  <!--End row footer-->          
+        </div>  <!--End row footer-->    
+    <!-----------------------------------------------------------------End footer------------------------------------------------------------------------------------>      
     </div><!--End contain bao ngoai-->
     
 </body><!--End body-->

@@ -78,12 +78,12 @@
             </div>   <!--End div container header-->
         </div><!--End div row content-->
 
-    <!------------------------------------------------------------Content--------------------------------------------------------------->
-
-
+    <!-----------------------------------------------------------------------------------------------------Content--------------------------------------------------------------->
         <div class="row" id="content">
 
+
             <div class="container" id="formlstk">
+
                 <div class="stepwizard">
                     <div class="stepwizard-row setup-panel">
                         <div class="stepwizard-step">
@@ -98,25 +98,59 @@
                             <a href="#step-3" type="button" class="btn btn-default btn-circle" disabled="disabled">3</a>
                             <p>Step 3</p>
                         </div>
+                        
                     </div>
                 </div>
                 <form role="form">
                     <div class="row setup-content" id="step-1">
                         <div class="col-xs-12">
                             <div class="col-md-12">
-                                <h3> Step 1</h3>
-                                <div class="form-group">
-                                    <label class="control-label">First Name</label>
-                                    <input maxlength="100" type="text" required="required" class="form-control" placeholder="Enter First Name" />
+                                <h3> Nhập thông tin</h3>
+                                <div class="form-group col-md-6">
+                                    <label class="control-label">Tài khoản nguồn</label>
+                                    <input maxlength="100" type="text" required="required" class="form-control" placeholder="Nhập số tài khoản" />
+                                </div>                                
+                                <div class="form-group col-md-6">
+                                    <label class="control-label">Kỳ hạn</label>
+                                    <select id="appointmentfor" name="appointmentfor" class="form-control">
+                                        <option value="Service#1">1 Tháng</option>
+                                        <option value="Service#2">2 Tháng</</option>
+                                        <option value="Service#3">3 Tháng</</option>
+                                        <option value="Service#4">4 Tháng</</option>
+                                        <option value="Service#4">5 Tháng</</option>
+                                        <option value="Service#4">6 Tháng</</option>
+                                        <option value="Service#4">7 Tháng</</option>
+                                        <option value="Service#4">8 Tháng</</option>
+                                        <option value="Service#4">9 Tháng</</option>
+                                        <option value="Service#4">10 Tháng</</option>
+                                        <option value="Service#4">11 Tháng</</option>
+                                        <option value="Service#4">12 Tháng</</option>
+                                    </select>
                                 </div>
-                                <div class="form-group">
-                                    <label class="control-label">Last Name</label>
-                                    <input maxlength="100" type="text" required="required" class="form-control" placeholder="Enter Last Name" />
+                                <div class="form-group col-md-6">
+                                    <label class="control-label">Số tiền</label>
+                                    <input maxlength="100" type="text" required="required" class="form-control" placeholder="Nhập số tiền" />
+                                    
                                 </div>
+
+                                <!-- Multiple Radios (inline) -->
+                                <div class="form-group">
+                                    <label class="col-md-4 control-label" for="reqType">Request Type</label>
+                                    <div class="col-md-4">
+                                        <label class="radio-inline" for="reqType-0">
+                                            <input type="radio" name="reqType" id="reqType-0" value="post" checked="checked"> POST
+                                        </label>
+                                        <label class="radio-inline" for="reqType-1">
+                                            <input type="radio" name="reqType" id="reqType-1" value="get"> GET
+                                        </label>
+                                    </div>
+                                </div>
+
                                 <button class="btn btn-primary nextBtn btn-lg pull-right" type="button">Next</button>
                             </div>
                         </div>
                     </div>
+
                     <div class="row setup-content" id="step-2">
                         <div class="col-xs-12">
                             <div class="col-md-12">
@@ -133,6 +167,7 @@
                             </div>
                         </div>
                     </div>
+
                     <div class="row setup-content" id="step-3">
                         <div class="col-xs-12">
                             <div class="col-md-12">
@@ -141,11 +176,14 @@
                             </div>
                         </div>
                     </div>
+                    
                 </form>
+
             </div>
 
+
         </div><!--End div row content-->
-    <!--------------------------------------------------footer------------------------------------------------------------------>
+    <!-----------------------------------------------------------------------------------------------footer------------------------------------------------------------------>
         <div class="row" id="footer">
             <!--row footer-->
             <div class="container">

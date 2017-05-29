@@ -27,7 +27,7 @@
     <script src="sweetalert-master/dist/sweetalert.min.js"></script>
     <link href="sweetalert-master/dist/sweetalert.css" rel="stylesheet" />
     <script type="text/javascript">
-        localStorage.setItem("isDangNhap", false);
+        
     </script>
 </head><!--End head-->
 <body>
@@ -46,15 +46,15 @@
                 </div> 
                 <div class="main-login main-center">
 
-                    <form class="form-horizontal" onsubmit="return validationform()">
-                        <div class="form-group">                                          
+                    <form id="login-form" class="form-horizontal" onsubmit="return validationform()">
+                        <div class="form-group">
                             <label for="username" class="cols-sm-2 control-label">Username</label>
                             <div class="cols-sm-10">
                                 <div class="input-group">
                                     <span class="input-group-addon"><i class="fa fa-users fa" aria-hidden="true"></i></span>
-                                    <input type="text" class="form-control" name="username" id="username" placeholder="Enter your Username" required autofocus/>
+                                    <input type="text" class="form-control" name="username" placeholder="Enter your Username" required autofocus />
                                 </div>
-                            </div> 
+                            </div>
                         </div>
 
                         <div class="form-group">
@@ -62,16 +62,19 @@
                             <div class="cols-sm-10">
                                 <div class="input-group">
                                     <span class="input-group-addon"><i class="fa fa-lock fa-lg" aria-hidden="true"></i></span>
-                                    <input type="password" class="form-control" name="password" id="password" placeholder="Enter your Password" required/>
+                                    <input type="password" class="form-control" name="password" placeholder="Enter your Password" required/>
                                 </div>
                             </div>
                         </div>
-                    
+
                         <div class="form-group ">
                             <button type="submit" onclick="validation()" class="btn btn-primary btn-lg btn-block login-button">Register</button>
                         </div>
-                        
+
                     </form><!--End login form-->
+                                
+
+
 
                 </div><!--End div .main-login .main-center-->
             </div><!--End div .row .main-->
